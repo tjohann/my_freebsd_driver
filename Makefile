@@ -5,7 +5,8 @@
 .PHONY: all clean
 
 all:
-	cd chapter_01; make
+	cd chap01_hello_world; make
+	cd chap01_echo; make
 	@echo
 	@echo "+-----------------------------------------------------+"
 	@echo "|                                                     |"
@@ -17,6 +18,7 @@ all:
 clean:
 	rm -f *~
 	rm -f .*~
-	cd chapter_01; make clean; rm -f *~; rm -f .*~; rm -f .depend*
+	cd chap01_hello_world; make clean; rm -f *~; rm -f .*~; rm -f .depend*
+	cd chap01_echo; make clean; rm -f *~; rm -f .*~; rm -f .depend*
 
 distclean: clean
